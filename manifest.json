@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "RTC Build status check",
+  "version": "1.0",
+  "author": "Ashutosh Jha",
+  "content_scripts": [
+    {
+      "matches": ["*://ccm-coaclmp.state.mi.us:*/*"],
+      "run_at": "document_idle",
+      "all_frames": true,
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "128": "rtc.png"
+  },
+  "browser_action": {
+    "default_icon": "rtc.png"
+  }
+}
